@@ -1,10 +1,10 @@
-# BBDN-Web-Service-Python-Sample-Code
-This project contains sample code for interacting with the Blackboard Learn SOAP Web Services in Python. This sample code was built with Python 2.7.9.
+# BBDN-WsSoapPythonWorkshop
+This project contains sample code for a workshop. The purpose of this workshop is to learn how to interact with the Blackboard Learn SOAP Web Services in Python. This sample code was built with Python 2.7.9.
 
 ###Project at a glance:
 - Target: Blackboard Learn 9.1 SP 11 minimum
 - Source Release: v1.0
-- Release Date  2015-02-19
+- Release Date  2015-08-19
 - Author: shurrey
 - Tested on Blackboard Learn 9.1 April 2014 release
 
@@ -103,5 +103,4 @@ Just be sure to replace my absolute path to the absolute path on your file syste
 - If you follow workaround 2, the code should work as-is.
 
 ### Conclusion
-For a thorough walkthrough of this code, visit the corresponding Blackboard Help page <a href="http://help.blackboard.com/en-us/Learn/9.1_2014_04/Administrator/080_Developer_Resources/020_Develop/020_Web_Services/010_Examples/Get_Course_Announcements_With_Python" target="_blank">here</a>.
-# BBDN-WsSoapPythonWorkshop
+Look for a corresponding Gist with instuctions to take advantage of this workshop on your own time. 
