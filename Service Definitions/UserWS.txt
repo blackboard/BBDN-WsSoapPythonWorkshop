@@ -1,0 +1,120 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.6
+
+Service ( User.WS ) tns="http://user.ws.blackboard/"
+   Prefixes (3)
+      ns3 = "http://user.ws.blackboard"
+      ns4 = "http://user.ws.blackboard/xsd"
+      ns5 = "http://ws.platform.blackboard/xsd"
+   Ports (4):
+      (User.WSSOAP11port_https)
+         Methods (17):
+            changeUserBatchUid(xs:string originalBatchUid, xs:string batchUid)
+            changeUserDataSourceId(xs:string userId, xs:string dataSourceId)
+            deleteAddressBookEntry(xs:string[] entryId)
+            deleteObserverAssociation(ns4:ObserverAssociationVO[] association)
+            deleteUser(xs:string[] userId)
+            deleteUserByInstitutionRole(xs:string[] insRoleId)
+            getAddressBookEntry(ns4:UserFilter filter)
+            getInstitutionRoles(xs:string[] ids)
+            getObservee(xs:string[] observerId)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemRoles(xs:string[] filter)
+            getUser(ns4:UserFilter filter)
+            getUserInstitutionRoles(xs:string[] userId)
+            initializeUserWS(xs:boolean ignore)
+            saveAddressBookEntry(ns4:AddressBookEntryVO[] user)
+            saveObserverAssociation(ns4:ObserverAssociationVO[] association)
+            saveUser(ns4:UserVO[] user)
+         Types (8):
+            ns4:AddressBookEntryVO
+            ns4:ObserverAssociationVO
+            ns4:PortalRoleVO
+            ns4:UserExtendedInfoVO
+            ns4:UserFilter
+            ns4:UserRoleVO
+            ns4:UserVO
+            ns5:VersionVO
+      (User.WSSOAP11port_http1)
+         Methods (17):
+            changeUserBatchUid(xs:string originalBatchUid, xs:string batchUid)
+            changeUserDataSourceId(xs:string userId, xs:string dataSourceId)
+            deleteAddressBookEntry(xs:string[] entryId)
+            deleteObserverAssociation(ns4:ObserverAssociationVO[] association)
+            deleteUser(xs:string[] userId)
+            deleteUserByInstitutionRole(xs:string[] insRoleId)
+            getAddressBookEntry(ns4:UserFilter filter)
+            getInstitutionRoles(xs:string[] ids)
+            getObservee(xs:string[] observerId)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemRoles(xs:string[] filter)
+            getUser(ns4:UserFilter filter)
+            getUserInstitutionRoles(xs:string[] userId)
+            initializeUserWS(xs:boolean ignore)
+            saveAddressBookEntry(ns4:AddressBookEntryVO[] user)
+            saveObserverAssociation(ns4:ObserverAssociationVO[] association)
+            saveUser(ns4:UserVO[] user)
+         Types (8):
+            ns4:AddressBookEntryVO
+            ns4:ObserverAssociationVO
+            ns4:PortalRoleVO
+            ns4:UserExtendedInfoVO
+            ns4:UserFilter
+            ns4:UserRoleVO
+            ns4:UserVO
+            ns5:VersionVO
+      (User.WSSOAP12port_https)
+         Methods (17):
+            changeUserBatchUid(xs:string originalBatchUid, xs:string batchUid)
+            changeUserDataSourceId(xs:string userId, xs:string dataSourceId)
+            deleteAddressBookEntry(xs:string[] entryId)
+            deleteObserverAssociation(ns4:ObserverAssociationVO[] association)
+            deleteUser(xs:string[] userId)
+            deleteUserByInstitutionRole(xs:string[] insRoleId)
+            getAddressBookEntry(ns4:UserFilter filter)
+            getInstitutionRoles(xs:string[] ids)
+            getObservee(xs:string[] observerId)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemRoles(xs:string[] filter)
+            getUser(ns4:UserFilter filter)
+            getUserInstitutionRoles(xs:string[] userId)
+            initializeUserWS(xs:boolean ignore)
+            saveAddressBookEntry(ns4:AddressBookEntryVO[] user)
+            saveObserverAssociation(ns4:ObserverAssociationVO[] association)
+            saveUser(ns4:UserVO[] user)
+         Types (8):
+            ns4:AddressBookEntryVO
+            ns4:ObserverAssociationVO
+            ns4:PortalRoleVO
+            ns4:UserExtendedInfoVO
+            ns4:UserFilter
+            ns4:UserRoleVO
+            ns4:UserVO
+            ns5:VersionVO
+      (User.WSSOAP12port_http1)
+         Methods (17):
+            changeUserBatchUid(xs:string originalBatchUid, xs:string batchUid)
+            changeUserDataSourceId(xs:string userId, xs:string dataSourceId)
+            deleteAddressBookEntry(xs:string[] entryId)
+            deleteObserverAssociation(ns4:ObserverAssociationVO[] association)
+            deleteUser(xs:string[] userId)
+            deleteUserByInstitutionRole(xs:string[] insRoleId)
+            getAddressBookEntry(ns4:UserFilter filter)
+            getInstitutionRoles(xs:string[] ids)
+            getObservee(xs:string[] observerId)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemRoles(xs:string[] filter)
+            getUser(ns4:UserFilter filter)
+            getUserInstitutionRoles(xs:string[] userId)
+            initializeUserWS(xs:boolean ignore)
+            saveAddressBookEntry(ns4:AddressBookEntryVO[] user)
+            saveObserverAssociation(ns4:ObserverAssociationVO[] association)
+            saveUser(ns4:UserVO[] user)
+         Types (8):
+            ns4:AddressBookEntryVO
+            ns4:ObserverAssociationVO
+            ns4:PortalRoleVO
+            ns4:UserExtendedInfoVO
+            ns4:UserFilter
+            ns4:UserRoleVO
+            ns4:UserVO
+            ns5:VersionVO

@@ -1,0 +1,268 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.6
+
+Service ( Course.WS ) tns="http://course.ws.blackboard/"
+   Prefixes (3)
+      ns3 = "http://course.ws.blackboard"
+      ns4 = "http://course.ws.blackboard/xsd"
+      ns5 = "http://ws.platform.blackboard/xsd"
+   Ports (4):
+      (Course.WSSOAP11port_https)
+         Methods (49):
+            addCourseToTerm(xs:string courseID, xs:string termID)
+            changeCourseBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeCourseCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeCourseDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            changeOrgBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeOrgCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeOrgDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            createCourse(ns4:CourseVO c)
+            createOrg(ns4:CourseVO c)
+            deleteCartridge(xs:string cartridgeId)
+            deleteCourse(xs:string[] ids)
+            deleteCourseCategory(xs:string[] categoryIds)
+            deleteCourseCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteGroup(xs:string courseId, xs:string[] ids)
+            deleteOrg(xs:string[] ids)
+            deleteOrgCategory(xs:string[] categoryIds)
+            deleteOrgCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteStaffInfo(xs:string courseId, xs:string[] staffInfoIds)
+            deleteTerm(xs:string termID)
+            getAvailableGroupTools(xs:string courseId)
+            getCartridge(xs:string cartridgeId)
+            getCategories(ns4:CategoryFilter filter)
+            getClassifications(xs:string classificationIdMask)
+            getCourse(ns4:CourseFilter filter)
+            getCourseCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getGroup(xs:string courseId, ns4:GroupFilter filter)
+            getOrg(ns4:CourseFilter filter)
+            getOrgCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getStaffInfo(xs:string courseId)
+            initializeCourseWS(xs:boolean ignore)
+            loadCoursesInTerm(xs:string termID)
+            loadTerm(xs:string termID)
+            loadTermByCourseId(xs:string courseID)
+            loadTerms(xs:boolean onlyAvailable)
+            loadTermsByName(xs:string name)
+            removeCourseFromTerm(xs:string courseID)
+            saveCartridge(ns4:CartridgeVO vo)
+            saveCourse(ns4:CourseVO c)
+            saveCourseCategory(ns4:CategoryVO adminCategory)
+            saveCourseCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveGroup(xs:string courseId, ns4:GroupVO vo)
+            saveOrgCategory(ns4:CategoryVO adminCategory)
+            saveOrgCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveStaffInfo(xs:string courseId, ns4:StaffInfoVO vo)
+            saveTerm(ns4:TermVO termVo)
+            setCourseBannerImage(xs:string courseId, xs:boolean removeOnly, xs:string fileName, xs:base64Binary fileContents)
+            updateCourse(ns4:CourseVO c)
+            updateOrg(ns4:CourseVO c)
+         Types (13):
+            ns4:CartridgeVO
+            ns4:CategoryFilter
+            ns4:CategoryMembershipFilter
+            ns4:CategoryMembershipVO
+            ns4:CategoryVO
+            ns4:ClassificationVO
+            ns4:CourseFilter
+            ns4:CourseVO
+            ns4:GroupFilter
+            ns4:GroupVO
+            ns4:StaffInfoVO
+            ns4:TermVO
+            ns5:VersionVO
+      (Course.WSSOAP11port_http1)
+         Methods (49):
+            addCourseToTerm(xs:string courseID, xs:string termID)
+            changeCourseBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeCourseCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeCourseDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            changeOrgBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeOrgCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeOrgDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            createCourse(ns4:CourseVO c)
+            createOrg(ns4:CourseVO c)
+            deleteCartridge(xs:string cartridgeId)
+            deleteCourse(xs:string[] ids)
+            deleteCourseCategory(xs:string[] categoryIds)
+            deleteCourseCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteGroup(xs:string courseId, xs:string[] ids)
+            deleteOrg(xs:string[] ids)
+            deleteOrgCategory(xs:string[] categoryIds)
+            deleteOrgCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteStaffInfo(xs:string courseId, xs:string[] staffInfoIds)
+            deleteTerm(xs:string termID)
+            getAvailableGroupTools(xs:string courseId)
+            getCartridge(xs:string cartridgeId)
+            getCategories(ns4:CategoryFilter filter)
+            getClassifications(xs:string classificationIdMask)
+            getCourse(ns4:CourseFilter filter)
+            getCourseCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getGroup(xs:string courseId, ns4:GroupFilter filter)
+            getOrg(ns4:CourseFilter filter)
+            getOrgCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getStaffInfo(xs:string courseId)
+            initializeCourseWS(xs:boolean ignore)
+            loadCoursesInTerm(xs:string termID)
+            loadTerm(xs:string termID)
+            loadTermByCourseId(xs:string courseID)
+            loadTerms(xs:boolean onlyAvailable)
+            loadTermsByName(xs:string name)
+            removeCourseFromTerm(xs:string courseID)
+            saveCartridge(ns4:CartridgeVO vo)
+            saveCourse(ns4:CourseVO c)
+            saveCourseCategory(ns4:CategoryVO adminCategory)
+            saveCourseCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveGroup(xs:string courseId, ns4:GroupVO vo)
+            saveOrgCategory(ns4:CategoryVO adminCategory)
+            saveOrgCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveStaffInfo(xs:string courseId, ns4:StaffInfoVO vo)
+            saveTerm(ns4:TermVO termVo)
+            setCourseBannerImage(xs:string courseId, xs:boolean removeOnly, xs:string fileName, xs:base64Binary fileContents)
+            updateCourse(ns4:CourseVO c)
+            updateOrg(ns4:CourseVO c)
+         Types (13):
+            ns4:CartridgeVO
+            ns4:CategoryFilter
+            ns4:CategoryMembershipFilter
+            ns4:CategoryMembershipVO
+            ns4:CategoryVO
+            ns4:ClassificationVO
+            ns4:CourseFilter
+            ns4:CourseVO
+            ns4:GroupFilter
+            ns4:GroupVO
+            ns4:StaffInfoVO
+            ns4:TermVO
+            ns5:VersionVO
+      (Course.WSSOAP12port_https)
+         Methods (49):
+            addCourseToTerm(xs:string courseID, xs:string termID)
+            changeCourseBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeCourseCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeCourseDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            changeOrgBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeOrgCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeOrgDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            createCourse(ns4:CourseVO c)
+            createOrg(ns4:CourseVO c)
+            deleteCartridge(xs:string cartridgeId)
+            deleteCourse(xs:string[] ids)
+            deleteCourseCategory(xs:string[] categoryIds)
+            deleteCourseCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteGroup(xs:string courseId, xs:string[] ids)
+            deleteOrg(xs:string[] ids)
+            deleteOrgCategory(xs:string[] categoryIds)
+            deleteOrgCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteStaffInfo(xs:string courseId, xs:string[] staffInfoIds)
+            deleteTerm(xs:string termID)
+            getAvailableGroupTools(xs:string courseId)
+            getCartridge(xs:string cartridgeId)
+            getCategories(ns4:CategoryFilter filter)
+            getClassifications(xs:string classificationIdMask)
+            getCourse(ns4:CourseFilter filter)
+            getCourseCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getGroup(xs:string courseId, ns4:GroupFilter filter)
+            getOrg(ns4:CourseFilter filter)
+            getOrgCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getStaffInfo(xs:string courseId)
+            initializeCourseWS(xs:boolean ignore)
+            loadCoursesInTerm(xs:string termID)
+            loadTerm(xs:string termID)
+            loadTermByCourseId(xs:string courseID)
+            loadTerms(xs:boolean onlyAvailable)
+            loadTermsByName(xs:string name)
+            removeCourseFromTerm(xs:string courseID)
+            saveCartridge(ns4:CartridgeVO vo)
+            saveCourse(ns4:CourseVO c)
+            saveCourseCategory(ns4:CategoryVO adminCategory)
+            saveCourseCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveGroup(xs:string courseId, ns4:GroupVO vo)
+            saveOrgCategory(ns4:CategoryVO adminCategory)
+            saveOrgCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveStaffInfo(xs:string courseId, ns4:StaffInfoVO vo)
+            saveTerm(ns4:TermVO termVo)
+            setCourseBannerImage(xs:string courseId, xs:boolean removeOnly, xs:string fileName, xs:base64Binary fileContents)
+            updateCourse(ns4:CourseVO c)
+            updateOrg(ns4:CourseVO c)
+         Types (13):
+            ns4:CartridgeVO
+            ns4:CategoryFilter
+            ns4:CategoryMembershipFilter
+            ns4:CategoryMembershipVO
+            ns4:CategoryVO
+            ns4:ClassificationVO
+            ns4:CourseFilter
+            ns4:CourseVO
+            ns4:GroupFilter
+            ns4:GroupVO
+            ns4:StaffInfoVO
+            ns4:TermVO
+            ns5:VersionVO
+      (Course.WSSOAP12port_http1)
+         Methods (49):
+            addCourseToTerm(xs:string courseID, xs:string termID)
+            changeCourseBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeCourseCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeCourseDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            changeOrgBatchUid(xs:string oldBatchUid, xs:string newBatchUid)
+            changeOrgCategoryBatchUid(xs:string categoryId, xs:string newBatchUid)
+            changeOrgDataSourceId(xs:string courseId, xs:string newDataSourceId)
+            createCourse(ns4:CourseVO c)
+            createOrg(ns4:CourseVO c)
+            deleteCartridge(xs:string cartridgeId)
+            deleteCourse(xs:string[] ids)
+            deleteCourseCategory(xs:string[] categoryIds)
+            deleteCourseCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteGroup(xs:string courseId, xs:string[] ids)
+            deleteOrg(xs:string[] ids)
+            deleteOrgCategory(xs:string[] categoryIds)
+            deleteOrgCategoryMembership(xs:string[] categoryMembershipIds)
+            deleteStaffInfo(xs:string courseId, xs:string[] staffInfoIds)
+            deleteTerm(xs:string termID)
+            getAvailableGroupTools(xs:string courseId)
+            getCartridge(xs:string cartridgeId)
+            getCategories(ns4:CategoryFilter filter)
+            getClassifications(xs:string classificationIdMask)
+            getCourse(ns4:CourseFilter filter)
+            getCourseCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getGroup(xs:string courseId, ns4:GroupFilter filter)
+            getOrg(ns4:CourseFilter filter)
+            getOrgCategoryMembership(ns4:CategoryMembershipFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getStaffInfo(xs:string courseId)
+            initializeCourseWS(xs:boolean ignore)
+            loadCoursesInTerm(xs:string termID)
+            loadTerm(xs:string termID)
+            loadTermByCourseId(xs:string courseID)
+            loadTerms(xs:boolean onlyAvailable)
+            loadTermsByName(xs:string name)
+            removeCourseFromTerm(xs:string courseID)
+            saveCartridge(ns4:CartridgeVO vo)
+            saveCourse(ns4:CourseVO c)
+            saveCourseCategory(ns4:CategoryVO adminCategory)
+            saveCourseCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveGroup(xs:string courseId, ns4:GroupVO vo)
+            saveOrgCategory(ns4:CategoryVO adminCategory)
+            saveOrgCategoryMembership(ns4:CategoryMembershipVO membership)
+            saveStaffInfo(xs:string courseId, ns4:StaffInfoVO vo)
+            saveTerm(ns4:TermVO termVo)
+            setCourseBannerImage(xs:string courseId, xs:boolean removeOnly, xs:string fileName, xs:base64Binary fileContents)
+            updateCourse(ns4:CourseVO c)
+            updateOrg(ns4:CourseVO c)
+         Types (13):
+            ns4:CartridgeVO
+            ns4:CategoryFilter
+            ns4:CategoryMembershipFilter
+            ns4:CategoryMembershipVO
+            ns4:CategoryVO
+            ns4:ClassificationVO
+            ns4:CourseFilter
+            ns4:CourseVO
+            ns4:GroupFilter
+            ns4:GroupVO
+            ns4:StaffInfoVO
+            ns4:TermVO
+            ns5:VersionVO

@@ -1,0 +1,144 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.6
+
+Service ( Gradebook.WS ) tns="http://gradebook.ws.blackboard/"
+   Prefixes (3)
+      ns3 = "http://gradebook.ws.blackboard"
+      ns4 = "http://gradebook.ws.blackboard/xsd"
+      ns5 = "http://ws.platform.blackboard/xsd"
+   Ports (4):
+      (Gradebook.WSSOAP11port_https)
+         Methods (19):
+            deleteAttempts(xs:string courseId, xs:string[] idsToDelete)
+            deleteColumns(xs:string courseId, xs:string[] idsToDelete, xs:boolean onlyIfEmpty)
+            deleteGradebookTypes(xs:string courseId, xs:string[] idsToDelete)
+            deleteGrades(xs:string courseId, xs:string[] idsToDelete)
+            deleteGradingSchemas(xs:string courseId, xs:string[] idsToDelete)
+            getAttempts(xs:string courseId, ns4:AttemptFilter filter)
+            getGradebookColumns(xs:string courseId, ns4:ColumnFilter filter)
+            getGradebookTypes(xs:string courseId, ns4:GradebookTypeFilter filter)
+            getGrades(xs:string courseId, ns4:ScoreFilter filter)
+            getGradingSchemas(xs:string courseId, ns4:GradingSchemaFilter filter)
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            initializeGradebookWS(xs:boolean ignore)
+            saveAttempts(xs:string courseId, ns4:AttemptVO[] attempts)
+            saveColumns(xs:string courseId, ns4:ColumnVO[] columns)
+            saveGradebookTypes(xs:string courseId, ns4:GradebookTypeVO[] gradebookTypes)
+            saveGrades(xs:string courseId, ns4:ScoreVO[] grades, xs:boolean overrideIfManual)
+            saveGradingSchemas(xs:string courseId, ns4:GradingSchemaVO[] schemas)
+            updateColumnAttribute(xs:string courseId, ns4:ColumnVO[] columns, xs:int attributeId)
+         Types (12):
+            ns4:AttemptFilter
+            ns4:AttemptVO
+            ns4:ColumnFilter
+            ns4:ColumnVO
+            ns4:GradebookTypeFilter
+            ns4:GradebookTypeVO
+            ns4:GradingSchemaFilter
+            ns4:GradingSchemaSymbolVO
+            ns4:GradingSchemaVO
+            ns4:ScoreFilter
+            ns4:ScoreVO
+            ns5:VersionVO
+      (Gradebook.WSSOAP11port_http1)
+         Methods (19):
+            deleteAttempts(xs:string courseId, xs:string[] idsToDelete)
+            deleteColumns(xs:string courseId, xs:string[] idsToDelete, xs:boolean onlyIfEmpty)
+            deleteGradebookTypes(xs:string courseId, xs:string[] idsToDelete)
+            deleteGrades(xs:string courseId, xs:string[] idsToDelete)
+            deleteGradingSchemas(xs:string courseId, xs:string[] idsToDelete)
+            getAttempts(xs:string courseId, ns4:AttemptFilter filter)
+            getGradebookColumns(xs:string courseId, ns4:ColumnFilter filter)
+            getGradebookTypes(xs:string courseId, ns4:GradebookTypeFilter filter)
+            getGrades(xs:string courseId, ns4:ScoreFilter filter)
+            getGradingSchemas(xs:string courseId, ns4:GradingSchemaFilter filter)
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            initializeGradebookWS(xs:boolean ignore)
+            saveAttempts(xs:string courseId, ns4:AttemptVO[] attempts)
+            saveColumns(xs:string courseId, ns4:ColumnVO[] columns)
+            saveGradebookTypes(xs:string courseId, ns4:GradebookTypeVO[] gradebookTypes)
+            saveGrades(xs:string courseId, ns4:ScoreVO[] grades, xs:boolean overrideIfManual)
+            saveGradingSchemas(xs:string courseId, ns4:GradingSchemaVO[] schemas)
+            updateColumnAttribute(xs:string courseId, ns4:ColumnVO[] columns, xs:int attributeId)
+         Types (12):
+            ns4:AttemptFilter
+            ns4:AttemptVO
+            ns4:ColumnFilter
+            ns4:ColumnVO
+            ns4:GradebookTypeFilter
+            ns4:GradebookTypeVO
+            ns4:GradingSchemaFilter
+            ns4:GradingSchemaSymbolVO
+            ns4:GradingSchemaVO
+            ns4:ScoreFilter
+            ns4:ScoreVO
+            ns5:VersionVO
+      (Gradebook.WSSOAP12port_https)
+         Methods (19):
+            deleteAttempts(xs:string courseId, xs:string[] idsToDelete)
+            deleteColumns(xs:string courseId, xs:string[] idsToDelete, xs:boolean onlyIfEmpty)
+            deleteGradebookTypes(xs:string courseId, xs:string[] idsToDelete)
+            deleteGrades(xs:string courseId, xs:string[] idsToDelete)
+            deleteGradingSchemas(xs:string courseId, xs:string[] idsToDelete)
+            getAttempts(xs:string courseId, ns4:AttemptFilter filter)
+            getGradebookColumns(xs:string courseId, ns4:ColumnFilter filter)
+            getGradebookTypes(xs:string courseId, ns4:GradebookTypeFilter filter)
+            getGrades(xs:string courseId, ns4:ScoreFilter filter)
+            getGradingSchemas(xs:string courseId, ns4:GradingSchemaFilter filter)
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            initializeGradebookWS(xs:boolean ignore)
+            saveAttempts(xs:string courseId, ns4:AttemptVO[] attempts)
+            saveColumns(xs:string courseId, ns4:ColumnVO[] columns)
+            saveGradebookTypes(xs:string courseId, ns4:GradebookTypeVO[] gradebookTypes)
+            saveGrades(xs:string courseId, ns4:ScoreVO[] grades, xs:boolean overrideIfManual)
+            saveGradingSchemas(xs:string courseId, ns4:GradingSchemaVO[] schemas)
+            updateColumnAttribute(xs:string courseId, ns4:ColumnVO[] columns, xs:int attributeId)
+         Types (12):
+            ns4:AttemptFilter
+            ns4:AttemptVO
+            ns4:ColumnFilter
+            ns4:ColumnVO
+            ns4:GradebookTypeFilter
+            ns4:GradebookTypeVO
+            ns4:GradingSchemaFilter
+            ns4:GradingSchemaSymbolVO
+            ns4:GradingSchemaVO
+            ns4:ScoreFilter
+            ns4:ScoreVO
+            ns5:VersionVO
+      (Gradebook.WSSOAP12port_http1)
+         Methods (19):
+            deleteAttempts(xs:string courseId, xs:string[] idsToDelete)
+            deleteColumns(xs:string courseId, xs:string[] idsToDelete, xs:boolean onlyIfEmpty)
+            deleteGradebookTypes(xs:string courseId, xs:string[] idsToDelete)
+            deleteGrades(xs:string courseId, xs:string[] idsToDelete)
+            deleteGradingSchemas(xs:string courseId, xs:string[] idsToDelete)
+            getAttempts(xs:string courseId, ns4:AttemptFilter filter)
+            getGradebookColumns(xs:string courseId, ns4:ColumnFilter filter)
+            getGradebookTypes(xs:string courseId, ns4:GradebookTypeFilter filter)
+            getGrades(xs:string courseId, ns4:ScoreFilter filter)
+            getGradingSchemas(xs:string courseId, ns4:GradingSchemaFilter filter)
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            initializeGradebookWS(xs:boolean ignore)
+            saveAttempts(xs:string courseId, ns4:AttemptVO[] attempts)
+            saveColumns(xs:string courseId, ns4:ColumnVO[] columns)
+            saveGradebookTypes(xs:string courseId, ns4:GradebookTypeVO[] gradebookTypes)
+            saveGrades(xs:string courseId, ns4:ScoreVO[] grades, xs:boolean overrideIfManual)
+            saveGradingSchemas(xs:string courseId, ns4:GradingSchemaVO[] schemas)
+            updateColumnAttribute(xs:string courseId, ns4:ColumnVO[] columns, xs:int attributeId)
+         Types (12):
+            ns4:AttemptFilter
+            ns4:AttemptVO
+            ns4:ColumnFilter
+            ns4:ColumnVO
+            ns4:GradebookTypeFilter
+            ns4:GradebookTypeVO
+            ns4:GradingSchemaFilter
+            ns4:GradingSchemaSymbolVO
+            ns4:GradingSchemaVO
+            ns4:ScoreFilter
+            ns4:ScoreVO
+            ns5:VersionVO

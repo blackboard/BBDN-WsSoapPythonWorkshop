@@ -1,0 +1,156 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.6
+
+Service ( Content.WS ) tns="http://content.ws.blackboard/"
+   Prefixes (3)
+      ns3 = "http://content.ws.blackboard"
+      ns4 = "http://content.ws.blackboard/xsd"
+      ns5 = "http://ws.platform.blackboard/xsd"
+   Ports (4):
+      (Content.WSSOAP11port_https)
+         Methods (23):
+            addContentFile(xs:string courseId, xs:string contentId, ns4:ContentFileMetadataVO contentFile, xs:base64Binary fileContents)
+            deleteContentFiles(xs:string courseId, xs:string[] contentFileIds)
+            deleteContents(xs:string courseId, xs:string[] contentIds)
+            deleteCourseTOCs(xs:string courseId, xs:string[] tocIds)
+            deleteLinks(xs:string courseId, xs:string[] linkIds)
+            getContentFiles(xs:string courseId, xs:string contentId)
+            getFilteredContent(xs:string courseId, ns4:ContentFilter filter)
+            getFilteredCourseStatus(xs:string courseId, ns4:ContentStatusFilter filter)
+            getLinksByReferredToType(xs:string courseId, xs:string referrerToType)
+            getLinksByReferrerType(xs:string courseId, xs:string referrerType)
+            getRequiredEntitlements(xs:string method)
+            getReviewStatusByCourseId(xs:string courseId)
+            getServerVersion(ns5:VersionVO unused)
+            getTOCsByCourseId(xs:string courseId)
+            initializeContentWS(xs:boolean ignore)
+            initializeVersion2ContentWS(xs:boolean ignore)
+            loadContent(ns5:CourseIdVO course, xs:string contentId)
+            removeContent(ns5:CourseIdVO course, xs:string contentId)
+            saveContent(ns5:CourseIdVO course, ns4:ContentVO content)
+            saveContentsReviewed(xs:string courseId, ns4:ContentsReviewedVO vo)
+            saveCourseTOC(xs:string courseId, ns4:CourseTOCVO vo, ns4:LinkVO linkVO)
+            saveLink(xs:string courseId, ns4:LinkVO link)
+            updateContentFileLinkName(xs:string courseId, xs:string contentId, xs:string contentFileId, xs:string newLinkName)
+         Types (11):
+            ns4:AggregateReviewStatusVO
+            ns4:ContentFileMetadataVO
+            ns4:ContentFilter
+            ns4:ContentStatusFilter
+            ns4:ContentStatusVO
+            ns4:ContentVO
+            ns4:ContentsReviewedVO
+            ns5:CourseIdVO
+            ns4:CourseTOCVO
+            ns4:LinkVO
+            ns5:VersionVO
+      (Content.WSSOAP11port_http1)
+         Methods (23):
+            addContentFile(xs:string courseId, xs:string contentId, ns4:ContentFileMetadataVO contentFile, xs:base64Binary fileContents)
+            deleteContentFiles(xs:string courseId, xs:string[] contentFileIds)
+            deleteContents(xs:string courseId, xs:string[] contentIds)
+            deleteCourseTOCs(xs:string courseId, xs:string[] tocIds)
+            deleteLinks(xs:string courseId, xs:string[] linkIds)
+            getContentFiles(xs:string courseId, xs:string contentId)
+            getFilteredContent(xs:string courseId, ns4:ContentFilter filter)
+            getFilteredCourseStatus(xs:string courseId, ns4:ContentStatusFilter filter)
+            getLinksByReferredToType(xs:string courseId, xs:string referrerToType)
+            getLinksByReferrerType(xs:string courseId, xs:string referrerType)
+            getRequiredEntitlements(xs:string method)
+            getReviewStatusByCourseId(xs:string courseId)
+            getServerVersion(ns5:VersionVO unused)
+            getTOCsByCourseId(xs:string courseId)
+            initializeContentWS(xs:boolean ignore)
+            initializeVersion2ContentWS(xs:boolean ignore)
+            loadContent(ns5:CourseIdVO course, xs:string contentId)
+            removeContent(ns5:CourseIdVO course, xs:string contentId)
+            saveContent(ns5:CourseIdVO course, ns4:ContentVO content)
+            saveContentsReviewed(xs:string courseId, ns4:ContentsReviewedVO vo)
+            saveCourseTOC(xs:string courseId, ns4:CourseTOCVO vo, ns4:LinkVO linkVO)
+            saveLink(xs:string courseId, ns4:LinkVO link)
+            updateContentFileLinkName(xs:string courseId, xs:string contentId, xs:string contentFileId, xs:string newLinkName)
+         Types (11):
+            ns4:AggregateReviewStatusVO
+            ns4:ContentFileMetadataVO
+            ns4:ContentFilter
+            ns4:ContentStatusFilter
+            ns4:ContentStatusVO
+            ns4:ContentVO
+            ns4:ContentsReviewedVO
+            ns5:CourseIdVO
+            ns4:CourseTOCVO
+            ns4:LinkVO
+            ns5:VersionVO
+      (Content.WSSOAP12port_https)
+         Methods (23):
+            addContentFile(xs:string courseId, xs:string contentId, ns4:ContentFileMetadataVO contentFile, xs:base64Binary fileContents)
+            deleteContentFiles(xs:string courseId, xs:string[] contentFileIds)
+            deleteContents(xs:string courseId, xs:string[] contentIds)
+            deleteCourseTOCs(xs:string courseId, xs:string[] tocIds)
+            deleteLinks(xs:string courseId, xs:string[] linkIds)
+            getContentFiles(xs:string courseId, xs:string contentId)
+            getFilteredContent(xs:string courseId, ns4:ContentFilter filter)
+            getFilteredCourseStatus(xs:string courseId, ns4:ContentStatusFilter filter)
+            getLinksByReferredToType(xs:string courseId, xs:string referrerToType)
+            getLinksByReferrerType(xs:string courseId, xs:string referrerType)
+            getRequiredEntitlements(xs:string method)
+            getReviewStatusByCourseId(xs:string courseId)
+            getServerVersion(ns5:VersionVO unused)
+            getTOCsByCourseId(xs:string courseId)
+            initializeContentWS(xs:boolean ignore)
+            initializeVersion2ContentWS(xs:boolean ignore)
+            loadContent(ns5:CourseIdVO course, xs:string contentId)
+            removeContent(ns5:CourseIdVO course, xs:string contentId)
+            saveContent(ns5:CourseIdVO course, ns4:ContentVO content)
+            saveContentsReviewed(xs:string courseId, ns4:ContentsReviewedVO vo)
+            saveCourseTOC(xs:string courseId, ns4:CourseTOCVO vo, ns4:LinkVO linkVO)
+            saveLink(xs:string courseId, ns4:LinkVO link)
+            updateContentFileLinkName(xs:string courseId, xs:string contentId, xs:string contentFileId, xs:string newLinkName)
+         Types (11):
+            ns4:AggregateReviewStatusVO
+            ns4:ContentFileMetadataVO
+            ns4:ContentFilter
+            ns4:ContentStatusFilter
+            ns4:ContentStatusVO
+            ns4:ContentVO
+            ns4:ContentsReviewedVO
+            ns5:CourseIdVO
+            ns4:CourseTOCVO
+            ns4:LinkVO
+            ns5:VersionVO
+      (Content.WSSOAP12port_http1)
+         Methods (23):
+            addContentFile(xs:string courseId, xs:string contentId, ns4:ContentFileMetadataVO contentFile, xs:base64Binary fileContents)
+            deleteContentFiles(xs:string courseId, xs:string[] contentFileIds)
+            deleteContents(xs:string courseId, xs:string[] contentIds)
+            deleteCourseTOCs(xs:string courseId, xs:string[] tocIds)
+            deleteLinks(xs:string courseId, xs:string[] linkIds)
+            getContentFiles(xs:string courseId, xs:string contentId)
+            getFilteredContent(xs:string courseId, ns4:ContentFilter filter)
+            getFilteredCourseStatus(xs:string courseId, ns4:ContentStatusFilter filter)
+            getLinksByReferredToType(xs:string courseId, xs:string referrerToType)
+            getLinksByReferrerType(xs:string courseId, xs:string referrerType)
+            getRequiredEntitlements(xs:string method)
+            getReviewStatusByCourseId(xs:string courseId)
+            getServerVersion(ns5:VersionVO unused)
+            getTOCsByCourseId(xs:string courseId)
+            initializeContentWS(xs:boolean ignore)
+            initializeVersion2ContentWS(xs:boolean ignore)
+            loadContent(ns5:CourseIdVO course, xs:string contentId)
+            removeContent(ns5:CourseIdVO course, xs:string contentId)
+            saveContent(ns5:CourseIdVO course, ns4:ContentVO content)
+            saveContentsReviewed(xs:string courseId, ns4:ContentsReviewedVO vo)
+            saveCourseTOC(xs:string courseId, ns4:CourseTOCVO vo, ns4:LinkVO linkVO)
+            saveLink(xs:string courseId, ns4:LinkVO link)
+            updateContentFileLinkName(xs:string courseId, xs:string contentId, xs:string contentFileId, xs:string newLinkName)
+         Types (11):
+            ns4:AggregateReviewStatusVO
+            ns4:ContentFileMetadataVO
+            ns4:ContentFilter
+            ns4:ContentStatusFilter
+            ns4:ContentStatusVO
+            ns4:ContentVO
+            ns4:ContentsReviewedVO
+            ns5:CourseIdVO
+            ns4:CourseTOCVO
+            ns4:LinkVO
+            ns5:VersionVO

@@ -1,0 +1,80 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.6
+
+Service ( CourseMembership.WS ) tns="http://coursemembership.ws.blackboard/"
+   Prefixes (3)
+      ns3 = "http://coursemembership.ws.blackboard"
+      ns4 = "http://coursemembership.ws.blackboard/xsd"
+      ns5 = "http://ws.platform.blackboard/xsd"
+   Ports (4):
+      (CourseMembership.WSSOAP11port_https)
+         Methods (9):
+            deleteCourseMembership(xs:string courseId, xs:string[] ids)
+            deleteGroupMembership(xs:string courseId, xs:string[] ids)
+            getCourseMembership(xs:string courseId, ns4:MembershipFilter f)
+            getCourseRoles(ns4:CourseRoleFilter f)
+            getGroupMembership(xs:string courseId, ns4:MembershipFilter f)
+            getServerVersion(ns5:VersionVO unused)
+            initializeCourseMembershipWS(xs:boolean ignore)
+            saveCourseMembership(xs:string courseId, ns4:CourseMembershipVO[] cmArray)
+            saveGroupMembership(xs:string courseId, ns4:GroupMembershipVO[] g)
+         Types (6):
+            ns4:CourseMembershipRoleVO
+            ns4:CourseMembershipVO
+            ns4:CourseRoleFilter
+            ns4:GroupMembershipVO
+            ns4:MembershipFilter
+            ns5:VersionVO
+      (CourseMembership.WSSOAP11port_http1)
+         Methods (9):
+            deleteCourseMembership(xs:string courseId, xs:string[] ids)
+            deleteGroupMembership(xs:string courseId, xs:string[] ids)
+            getCourseMembership(xs:string courseId, ns4:MembershipFilter f)
+            getCourseRoles(ns4:CourseRoleFilter f)
+            getGroupMembership(xs:string courseId, ns4:MembershipFilter f)
+            getServerVersion(ns5:VersionVO unused)
+            initializeCourseMembershipWS(xs:boolean ignore)
+            saveCourseMembership(xs:string courseId, ns4:CourseMembershipVO[] cmArray)
+            saveGroupMembership(xs:string courseId, ns4:GroupMembershipVO[] g)
+         Types (6):
+            ns4:CourseMembershipRoleVO
+            ns4:CourseMembershipVO
+            ns4:CourseRoleFilter
+            ns4:GroupMembershipVO
+            ns4:MembershipFilter
+            ns5:VersionVO
+      (CourseMembership.WSSOAP12port_https)
+         Methods (9):
+            deleteCourseMembership(xs:string courseId, xs:string[] ids)
+            deleteGroupMembership(xs:string courseId, xs:string[] ids)
+            getCourseMembership(xs:string courseId, ns4:MembershipFilter f)
+            getCourseRoles(ns4:CourseRoleFilter f)
+            getGroupMembership(xs:string courseId, ns4:MembershipFilter f)
+            getServerVersion(ns5:VersionVO unused)
+            initializeCourseMembershipWS(xs:boolean ignore)
+            saveCourseMembership(xs:string courseId, ns4:CourseMembershipVO[] cmArray)
+            saveGroupMembership(xs:string courseId, ns4:GroupMembershipVO[] g)
+         Types (6):
+            ns4:CourseMembershipRoleVO
+            ns4:CourseMembershipVO
+            ns4:CourseRoleFilter
+            ns4:GroupMembershipVO
+            ns4:MembershipFilter
+            ns5:VersionVO
+      (CourseMembership.WSSOAP12port_http1)
+         Methods (9):
+            deleteCourseMembership(xs:string courseId, xs:string[] ids)
+            deleteGroupMembership(xs:string courseId, xs:string[] ids)
+            getCourseMembership(xs:string courseId, ns4:MembershipFilter f)
+            getCourseRoles(ns4:CourseRoleFilter f)
+            getGroupMembership(xs:string courseId, ns4:MembershipFilter f)
+            getServerVersion(ns5:VersionVO unused)
+            initializeCourseMembershipWS(xs:boolean ignore)
+            saveCourseMembership(xs:string courseId, ns4:CourseMembershipVO[] cmArray)
+            saveGroupMembership(xs:string courseId, ns4:GroupMembershipVO[] g)
+         Types (6):
+            ns4:CourseMembershipRoleVO
+            ns4:CourseMembershipVO
+            ns4:CourseRoleFilter
+            ns4:GroupMembershipVO
+            ns4:MembershipFilter
+            ns5:VersionVO

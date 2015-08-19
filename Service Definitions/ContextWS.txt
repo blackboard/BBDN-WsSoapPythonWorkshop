@@ -1,0 +1,96 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.6
+
+Service ( Context.WS ) tns="http://context.ws.blackboard/"
+   Prefixes (3)
+      ns3 = "http://context.ws.blackboard"
+      ns4 = "http://context.ws.blackboard/xsd"
+      ns5 = "http://ws.platform.blackboard/xsd"
+   Ports (4):
+      (Context.WSSOAP11port_https)
+         Methods (15):
+            deactivateTool(xs:string ignore)
+            emulateUser(xs:string userToEmulate)
+            extendSessionLife(xs:long additionalSeconds)
+            getMemberships(xs:string userid)
+            getMyMemberships()
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemInstallationId()
+            initialize()
+            initializeVersion2()
+            login(xs:string userid, xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTicket(xs:string ticket, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTool(xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            logout()
+            registerTool(xs:string clientVendorId, xs:string clientProgramId, xs:string registrationPassword, xs:string description, xs:string initialSharedSecret, xs:string[] requiredToolMethods, xs:string[] requiredTicketMethods)
+         Types (4):
+            ns5:CourseIdVO
+            ns4:DeactivateToolResultVO
+            ns4:RegisterToolResultVO
+            ns5:VersionVO
+      (Context.WSSOAP11port_http1)
+         Methods (15):
+            deactivateTool(xs:string ignore)
+            emulateUser(xs:string userToEmulate)
+            extendSessionLife(xs:long additionalSeconds)
+            getMemberships(xs:string userid)
+            getMyMemberships()
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemInstallationId()
+            initialize()
+            initializeVersion2()
+            login(xs:string userid, xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTicket(xs:string ticket, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTool(xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            logout()
+            registerTool(xs:string clientVendorId, xs:string clientProgramId, xs:string registrationPassword, xs:string description, xs:string initialSharedSecret, xs:string[] requiredToolMethods, xs:string[] requiredTicketMethods)
+         Types (4):
+            ns5:CourseIdVO
+            ns4:DeactivateToolResultVO
+            ns4:RegisterToolResultVO
+            ns5:VersionVO
+      (Context.WSSOAP12port_https)
+         Methods (15):
+            deactivateTool(xs:string ignore)
+            emulateUser(xs:string userToEmulate)
+            extendSessionLife(xs:long additionalSeconds)
+            getMemberships(xs:string userid)
+            getMyMemberships()
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemInstallationId()
+            initialize()
+            initializeVersion2()
+            login(xs:string userid, xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTicket(xs:string ticket, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTool(xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            logout()
+            registerTool(xs:string clientVendorId, xs:string clientProgramId, xs:string registrationPassword, xs:string description, xs:string initialSharedSecret, xs:string[] requiredToolMethods, xs:string[] requiredTicketMethods)
+         Types (4):
+            ns5:CourseIdVO
+            ns4:DeactivateToolResultVO
+            ns4:RegisterToolResultVO
+            ns5:VersionVO
+      (Context.WSSOAP12port_http1)
+         Methods (15):
+            deactivateTool(xs:string ignore)
+            emulateUser(xs:string userToEmulate)
+            extendSessionLife(xs:long additionalSeconds)
+            getMemberships(xs:string userid)
+            getMyMemberships()
+            getRequiredEntitlements(xs:string method)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemInstallationId()
+            initialize()
+            initializeVersion2()
+            login(xs:string userid, xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTicket(xs:string ticket, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            loginTool(xs:string password, xs:string clientVendorId, xs:string clientProgramId, xs:string loginExtraInfo, xs:long expectedLifeSeconds)
+            logout()
+            registerTool(xs:string clientVendorId, xs:string clientProgramId, xs:string registrationPassword, xs:string description, xs:string initialSharedSecret, xs:string[] requiredToolMethods, xs:string[] requiredTicketMethods)
+         Types (4):
+            ns5:CourseIdVO
+            ns4:DeactivateToolResultVO
+            ns4:RegisterToolResultVO
+            ns5:VersionVO

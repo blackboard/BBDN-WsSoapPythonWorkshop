@@ -1,0 +1,88 @@
+Suds ( https://fedorahosted.org/suds/ )  version: 0.6
+
+Service ( Announcement.WS ) tns="http://announcement.ws.blackboard/"
+   Prefixes (3)
+      ns3 = "http://announcement.ws.blackboard"
+      ns4 = "http://announcement.ws.blackboard/xsd"
+      ns5 = "http://ws.platform.blackboard/xsd"
+   Ports (4):
+      (Announcement.WSSOAP11port_https)
+         Methods (14):
+            createCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+            deleteCourseAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteOrgAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteSystemAnnouncements(xs:string[] announcementIds)
+            getCourseAnnouncements(xs:string courseId, ns4:AnnouncementAttributeFilter filter)
+            getOrgAnnouncements(xs:string orgId, ns4:AnnouncementAttributeFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemAnnouncements(ns4:AnnouncementAttributeFilter filter)
+            initializeAnnouncementWS(xs:boolean ignore)
+            updateCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+         Types (3):
+            ns4:AnnouncementAttributeFilter
+            ns4:AnnouncementVO
+            ns5:VersionVO
+      (Announcement.WSSOAP11port_http1)
+         Methods (14):
+            createCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+            deleteCourseAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteOrgAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteSystemAnnouncements(xs:string[] announcementIds)
+            getCourseAnnouncements(xs:string courseId, ns4:AnnouncementAttributeFilter filter)
+            getOrgAnnouncements(xs:string orgId, ns4:AnnouncementAttributeFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemAnnouncements(ns4:AnnouncementAttributeFilter filter)
+            initializeAnnouncementWS(xs:boolean ignore)
+            updateCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+         Types (3):
+            ns4:AnnouncementAttributeFilter
+            ns4:AnnouncementVO
+            ns5:VersionVO
+      (Announcement.WSSOAP12port_https)
+         Methods (14):
+            createCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+            deleteCourseAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteOrgAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteSystemAnnouncements(xs:string[] announcementIds)
+            getCourseAnnouncements(xs:string courseId, ns4:AnnouncementAttributeFilter filter)
+            getOrgAnnouncements(xs:string orgId, ns4:AnnouncementAttributeFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemAnnouncements(ns4:AnnouncementAttributeFilter filter)
+            initializeAnnouncementWS(xs:boolean ignore)
+            updateCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+         Types (3):
+            ns4:AnnouncementAttributeFilter
+            ns4:AnnouncementVO
+            ns5:VersionVO
+      (Announcement.WSSOAP12port_http1)
+         Methods (14):
+            createCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            createSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+            deleteCourseAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteOrgAnnouncements(xs:string courseId, xs:string[] announcementIds)
+            deleteSystemAnnouncements(xs:string[] announcementIds)
+            getCourseAnnouncements(xs:string courseId, ns4:AnnouncementAttributeFilter filter)
+            getOrgAnnouncements(xs:string orgId, ns4:AnnouncementAttributeFilter filter)
+            getServerVersion(ns5:VersionVO unused)
+            getSystemAnnouncements(ns4:AnnouncementAttributeFilter filter)
+            initializeAnnouncementWS(xs:boolean ignore)
+            updateCourseAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateOrgAnnouncements(xs:string courseId, ns4:AnnouncementVO[] announcements)
+            updateSystemAnnouncements(ns4:AnnouncementVO[] announcements)
+         Types (3):
+            ns4:AnnouncementAttributeFilter
+            ns4:AnnouncementVO
+            ns5:VersionVO
