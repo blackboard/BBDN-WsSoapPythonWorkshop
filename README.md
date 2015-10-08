@@ -74,7 +74,7 @@ Make it look like this:
             class HTTPSHandler(AbstractHTTPHandler):
         
                 def __init__(self, debuglevel=0, context=None):
-                    gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)   # Only for gangstars
+                    gcontext = ssl.SSLContext(ssl.PROTOCOL_TLSv1)   # Turn off SSL Cert Checking DEV ONLY
                     AbstractHTTPHandler.__init__(self, debuglevel)
                     self._context = gcontext                        # Change context to gcontext
         
