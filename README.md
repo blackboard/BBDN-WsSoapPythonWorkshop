@@ -1,4 +1,7 @@
 # BBDN-WsSoapPythonWorkshop
+
+**NOTE: SOAP Web Services have been removed from the Blackboard Learn product as of the Q4 2019 Release (3900.0.0)**
+
 This project contains sample code for a workshop. The purpose of this workshop is to learn how to interact with the Blackboard Learn SOAP Web Services in Python. This sample code was built with Python 2.7.9.
 
 ###Project at a glance:
